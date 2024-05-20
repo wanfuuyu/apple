@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .exchange-title:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: theme("colors.gray.400");
+    position: absolute;
+    left: 8px;
+    margin-top: 3px;
+  }
+
+  .exchange-title {
+    margin: 0 12px;
+    padding: 6px 12px 12px;
+    border-left: solid 3px theme("colors.gray.300");
+    color: theme("colors.gray.500");
+    font-size: 0.875rem;
+    min-height: 15px;
+  }
+
+  .container {
+    border: solid 1px theme("colors.gray.300");
+    border-bottom: solid 1px theme("colors.gray.200");
+    border-radius: 0.5rem;
+    padding-bottom: 12px;
+    background-color: rgba(248, 250, 252, 0.3);
+  }
+
+  .config_field {
+    padding-bottom: 12px;
+    border-left: solid 3px theme("colors.gray.200");
+    margin: 0 12px;
+    border-left: solid 3px #88dbb1;
+  }
+
+  .config_field_last {
+    border-left: solid 3px theme("colors.gray.200");
+    margin: 0 12px;
+    border-left: solid 3px #88dbb1;
+  }
+
+  .queue_field:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    margin-top: 3px;
+    background-color: #88dbb1;
+  }
+
+  .queue_field {
+    display: flex;
+    font-size: 0.875rem;
+    justify-content: space-between;
+    padding: 9px 12px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: #edfaf4;
+  }
+
+  .add_operation {
+    display: flex;
+    gap: 16px;
+    margin-left: 16px;
+    padding-top: 6px;
+    flex-wrap: wrap;
+  }
+}
